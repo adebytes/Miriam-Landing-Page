@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background-color: #000000;
+    color: rgb(218, 217, 217);
+    overflow: hidden;
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+nav{
+    width: 100vw;
+    height: 10vh;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 6vw;
+}
+
+nav h3{
+    font-size: 2vw;
+    font-weight: 500;
+    color: rgb(218, 217, 217);
+    cursor: pointer;
+}
+
+nav h3:hover{
+    color:#ffff;
+}
+.menu-items{
+    display: flex;
+    list-style: none;
+    gap: 6vw;
+    align-items: center;
+}
+.menu-items li a{
+    text-decoration: none;
+    color: rgb(218, 217, 217);
+    font-size: 1.2vw;
+}
+.menu-items li a:hover{
+    color: #ffff;
+}
+.menu-items button{
+    padding: 0.85vw 2.5vw;
+    border-radius: 3vw;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(90deg, purple -21.77%, rgb(252, 2, 44) 70.41%);
+    color: #ffff;
+    font-size: 1.1vw;
+    font-weight: 600;
+    transform: scale(1);
+    transition: 0.5s ease;
+}
+.menu-items i{
+    display: none;
+}
+.menu-items button:hover{
+    transform: scale(0.85)
+}
+.heading{
+    font-size: 9vw;
+    text-align: center;
+    padding: 2vw 6vw;
+    line-height: 1.2;
+}
+.special{
+    background: linear-gradient(270deg, purple 30.6%, rgb(252, 2, 44) 116.45% );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.para{
+    text-align: center;
+    font-size: 1.65vw;
+    color: rgb(218, 217);
+}
+.wrapper{
+    width: 100%;
+    height: 37%;
+    background-color: #191a1b;
+    position: absolute;
+    bottom: 0;
+    border-top-right-radius: 4vw;
+    border-top-left-radius: 4vw;
+}
+.wrapper h4{
+    text-align: center;
+    font-size: 3vw;
+    text-transform: capitalize;
+    font-weight: 600;
+    padding: 4vw 8vw;
+    color: rgb(218, 217, 217);
+}
+
+.wrapper h4 span{
+    font-weight: 600;
+}
+@media (max-width: 600px) {
+    nav h3 {
+        font-size: 4vw;
+    }
+    .menu-items li{
+        display: none;
+    }
+    .menu-items button{
+        padding: 2vw 5vw;
+        font-size: 2.5vw;
+        border-radius: 5vw;
+    }
+    .menu-items i{
+        display: block;
+        cursor: pointer;
+        font-size: 6vw;
+    }
+    .heading{
+        margin: 10vw;
+        padding: 2vw 6vw;
+        font-size: 12vw;
+        line-height: 1.3;
+    }
+    .para{
+        margin-top: 4vw;
+        font-size: 3vw;
+        line-height: 1.7;
+    }
+    .wrapper{
+        border-top-right-radius: 8vw;
+        border-top-left-radius: 8vw;
+    }
+    .wrapper h4{
+        font-size: 5vw;
+        padding: 8vw 6vw;
+        line-height: 1.6;
+    }
+}
